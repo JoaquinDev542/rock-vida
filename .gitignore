@@ -3,3 +3,6 @@ package-lock.json
 package.json
 /src/js/dist
 /.vscode
+/src/html/aside.html
+/src/html/footer.html
+/src/html/header.html
