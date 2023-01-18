@@ -6,5 +6,145 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
     body 
-        h1 titulo h1 
-        span.hola hola
+        header.header
+            include header
+        main.main
+            section.hero
+                .heroTextMove
+                    span.heroTextMove__span Asociación Civil
+                    span.heroTextMove__span Asociación Civil
+                    span.heroTextMove__span Asociación Civil
+                    span.heroTextMove__span Asociación Civil
+                    span.heroTextMove__span Asociación Civil
+                    span.heroTextMove__span Asociación Civil
+                    span.heroTextMove__span Asociación Civil
+                    span.heroTextMove__span Asociación Civil
+                .heroContent
+                    span.heroContent__span Asociación Civil
+                    h1.heroContentTitle: img.heroContentTitle__img(src="", alt="")
+                    .heroContentImg
+                        img.heroContentImg__img(src="", alt="")
+                        a.heroContentImg__link(href="") Saber Mas
+            section.about
+                h2.about__title.subtitle Acerca de Nosotros
+                p.about__paragraph.paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis accusamus expedita fugit maiores vitae, voluptate assumenda quidem impedit mollitia autem adipisci dignissimos repudiandae corrupti nemo, voluptas harum repellendus eos sit.
+                .aboutContainers
+                    .aboutContainer.aboutContainer--first
+                        h3.aboutContainer__title.subsubtitle Quienes Somos
+                        img.aboutContainer__img(src="", alt="")
+                        a.aboutContainerLink(href="")
+                            span.aboutContainerLink__span Saber Mas
+                            img.aboutContainerLink__img(src="", alt="")
+                    .aboutContainer.aboutContainer--second
+                        h3.aboutContainer__title.subsubtitle Quienes Somos
+                        img.aboutContainer__img(src="", alt="")
+                        a.aboutContainerLink(href="")
+                            span.aboutContainerLink__span Saber Mas
+                            img.aboutContainerLink__img(src="", alt="")
+                    .aboutContainer.aboutContainer--third
+                        h3.aboutContainer__title.subsubtitle Quienes Somos
+                        img.aboutContainer__img(src="", alt="")
+                        a.aboutContainerLink(href="")
+                            span.aboutContainerLink__span Saber Mas
+                            img.aboutContainerLink__img(src="", alt="")
+            section.quotes
+                h2.quotes__title.subtitle Que Dicen de Nosotros..
+                .quotesContainers
+                    .quotesContainer.quotesContainer--first
+                        .quotesContainerName
+                            img.quotesContainerName__img(src="", alt="")
+                            span.quotesContainerName__name Maja Spahary
+                        .quoutesContainerCite
+                            img.quotesContainerCite__img(src="", alt="")
+                            blockquotes.quotesContainerCite__blockquotes Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit voluptates nisi consequuntur corporis eum.
+                            img.quotesContainerCite__img(src="", alt="")
+                    .quotesContainer.quotesContainer--second
+                        .quotesContainerName
+                            img.quotesContainerName__img(src="", alt="")
+                            span.quotesContainerName__name Maja Spahary
+                        .quoutesContainerCite
+                            img.quotesContainerCite__img(src="", alt="")
+                            blockquotes.quotesContainerCite__blockquotes Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit voluptates nisi consequuntur corporis eum.
+                            img.quotesContainerCite__img(src="", alt="")
+                    .quotesContainer.quotesContainer--third
+                        .quotesContainerName
+                            img.quotesContainerName__img(src="", alt="")
+                            span.quotesContainerName__name Maja Spahary
+                        .quoutesContainerCite
+                            img.quotesContainerCite__img(src="", alt="")
+                            blockquotes.quotesContainerCite__blockquotes Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit voluptates nisi consequuntur corporis eum.
+                            img.quotesContainerCite__img(src="", alt="")
+                    .quotesContainer.quotesContainer--fourth
+                        .quotesContainerName
+                            img.quotesContainerName__img(src="", alt="")
+                            span.quotesContainerName__name Maja Spahary
+                        .quoutesContainerCite
+                            img.quotesContainerCite__img(src="", alt="")
+                            blockquotes.quotesContainerCite__blockquotes Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit voluptates nisi consequuntur corporis eum.
+                            img.quotesContainerCite__img(src="", alt="")
+                    .quotesContainer.quotesContainer--fifth
+                        .quotesContainerName
+                            img.quotesContainerName__img(src="", alt="")
+                            span.quotesContainerName__name Maja Spahary
+                        .quoutesContainerCite
+                            img.quotesContainerCite__img(src="", alt="")
+                            blockquotes.quotesContainerCite__blockquotes Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit voluptates nisi consequuntur corporis eum.
+                            img.quotesContainerCite__img(src="", alt="")
+                    .quotesContainer.quotesContainer--sixth
+                        .quotesContainerName
+                            img.quotesContainerName__img(src="", alt="")
+                            span.quotesContainerName__name Maja Spahary
+                        .quoutesContainerCite
+                            img.quotesContainerCite__img(src="", alt="")
+                            blockquotes.quotesContainerCite__blockquotes Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit voluptates nisi consequuntur corporis eum.
+                            img.quotesContainerCite__img(src="", alt="")
+                .quotesArrows
+                    a.quotesArrows__link.quotesArrows__link--first(href=""): img.quotesArrows__img(src="", alt="")
+                    a.quotesArrows__link.quotesArrows__link--second(href=""): img.quotesArrows__img(src="", alt="")          
+            section.information
+                h2.information__title.subtitle Donde Encontrarnos
+                section.informationSocialMedia
+                    h3.informationSocialMedia__title.subsubtitle Redes Sociales
+                    .informationSocialMediaContainer
+                        .informationSocialMediaContainerBox.informationSocialMediaContainerBox--instagram
+                            a.informationSocialMediaContainerBoxLink(href="")
+                                img.informationSocialMediaContainerBoxLink__img(src="", alt="")
+                                span.informationSocialMediaContainerBoxLink__span RockyVida
+                        .informationSocialMediaContainerBox.informationSocialMediaContainerBox--whatsapp
+                            a.informationSocialMediaContainerBoxLink(href="")
+                                img.informationSocialMediaContainerBoxLink__img(src="", alt="")
+                                span.informationSocialMediaContainerBoxLink__span 123456789
+                        .informationSocialMediaContainerBox.informationSocialMediaContainerBox--gmail
+                            a.informationSocialMediaContainerBoxLink(href="")
+                                img.informationSocialMediaContainerBoxLink__img(src="", alt="")
+                                span.informationSocialMediaContainerBoxLink__span Gmail
+                        .informationSocialMediaContainerBox.informationSocialMediaContainerBox--facebook
+                            a.informationSocialMediaContainerBoxLink(href="")
+                                img.informationSocialMediaContainerBoxLink__img(src="", alt="")
+                                span.informationSocialMediaContainerBoxLink__span Facebook
+                section.informationTime
+                    h3.informationTime__title.subsubtitle Horarios
+                    section.informationTimeDirection
+                        h4.informationTimeDirection__title Dirección:
+                        span.informationTimeDirection__span C/Leonor de Cortinas 25
+                    section.informationTimeWhen
+                        h4.informationTimeWhen__title Horario:
+                        span.informationTimeWhen__span 8:00h - 19:00h
+            section.contact
+                h2.contact__title.subtitle Contacta con Nosotros
+                form.form(action="")
+                    input.input.input--name(type="text")(placeholder="Nombre:")
+                    input.input.input--email(type="email")(placeholder="Email:")
+                    textarea.textarea(placeholder="Mensaje...")
+                    a.form__send(href="#") Enviar
+            include blogContainer
+            aside.aside
+                include aside 
+            footer.footer
+                include footer      
+
+
+
+
+
+            
