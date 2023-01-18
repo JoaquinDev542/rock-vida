@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+        header.header
+            include header
+        main.main
+            h1.main__title.title Maneras de Donar
+            .mainContainer
+                .mainContainerBox.mainContainerBox--first
+                    h2.mainContainer__title.subtitle BBVA 
+                    p.mainContainer__p 1234 456789
+                .mainContainerBox.mainContainerBox--second
+                    h2.mainContainer__title.subtitle BIZUM 
+                    p.mainContainer__p +348554581
+                .mainContainerBox.mainContainerBox--third
+                    h2.mainContainer__title.subtitle BBVA 
+                    p.mainContainer__p 1234 456789
+        footer.footer
+            include footer
