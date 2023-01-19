@@ -7,7 +7,7 @@ html(lang="en")
         title Document
     body 
         header.header
-            include header
+            include pug/header
         main.main
             section.hero
                 .heroTextMove
@@ -138,9 +138,11 @@ html(lang="en")
                     textarea.textarea(placeholder="Mensaje...")
                     a.form__send(href="#") Enviar
             .blogContainers
-                include blogContainer 
+                include pug/blogContainer 
             aside.aside
-                include aside 
+                include pug/aside 
         footer.footer
-            include footer      
-  
+            include pug/footer   
+              
+     
+    
