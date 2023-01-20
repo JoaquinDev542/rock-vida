@@ -11,14 +11,8 @@ html(lang="en")
         main.main
             section.hero
                 .heroTextMove
-                    span.heroTextMove__span Asociación Civil
-                    span.heroTextMove__span Asociación Civil
-                    span.heroTextMove__span Asociación Civil
-                    span.heroTextMove__span Asociación Civil
-                    span.heroTextMove__span Asociación Civil
-                    span.heroTextMove__span Asociación Civil
-                    span.heroTextMove__span Asociación Civil
-                    span.heroTextMove__span Asociación Civil
+                    - for (var x = 0; x < 8; x++)
+                        span.heroTextMove__span Asociación Civil
                 .heroContent
                     span.heroContent__span Asociación Civil
                     h1.heroContentTitle: img.heroContentTitle__img(src="", alt="")
@@ -30,74 +24,40 @@ html(lang="en")
                 p.about__paragraph.paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis accusamus expedita fugit maiores vitae, voluptate assumenda quidem impedit mollitia autem adipisci dignissimos repudiandae corrupti nemo, voluptas harum repellendus eos sit.
                 .aboutContainers
                     .aboutContainer.aboutContainer--first
-                        h3.aboutContainer__title.subsubtitle Quienes Somos
-                        img.aboutContainer__img(src="", alt="")
-                        a.aboutContainerLink(href="")
-                            span.aboutContainerLink__span Saber Mas
-                            img.aboutContainerLink__img(src="", alt="")
+                        mixin aboutContainerContent
+                            h3.aboutContainer__title.subsubtitle 
+                            img.aboutContainer__img(src="", alt="")
+                            a.aboutContainerLink(href="")
+                                span.aboutContainerLink__span 
+                                img.aboutContainerLink__img(src="", alt="")
+                        +aboutContainerContent
                     .aboutContainer.aboutContainer--second
-                        h3.aboutContainer__title.subsubtitle Areas
-                        img.aboutContainer__img(src="", alt="")
-                        a.aboutContainerLink(href="")
-                            span.aboutContainerLink__span Saber Mas
-                            img.aboutContainerLink__img(src="", alt="")
+                        +aboutContainerContent
                     .aboutContainer.aboutContainer--third
-                        h3.aboutContainer__title.subsubtitle Blog
-                        img.aboutContainer__img(src="", alt="")
-                        a.aboutContainerLink(href="")
-                            span.aboutContainerLink__span Saber Mas
-                            img.aboutContainerLink__img(src="", alt="")
+                        +aboutContainerContent
             section.quotes
                 h2.quotes__title.subtitle Que Dicen de Nosotros..
                 .quotesContainers
                     .quotesContainer.quotesContainer--first
-                        .quotesContainerName
-                            img.quotesContainerName__img(src="", alt="")
-                            span.quotesContainerName__name Maja Spahary
-                        .quoutesContainerCite
-                            img.quotesContainerCite__img(src="", alt="")
-                            blockquotes.quotesContainerCite__blockquotes Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit voluptates nisi consequuntur corporis eum.
-                            img.quotesContainerCite__img(src="", alt="")
+                        mixin quotesContainerContent
+                            .quotesContainerName
+                                img.quotesContainerName__img(src="", alt="")
+                                span.quotesContainerName__name  
+                            .quoutesContainerCite
+                                img.quotesContainerCite__img(src="", alt="")
+                                blockquotes.quotesContainerCite__blockquotes 
+                                img.quotesContainerCite__img(src="", alt="")
+                        +quotesContainerContent
                     .quotesContainer.quotesContainer--second
-                        .quotesContainerName
-                            img.quotesContainerName__img(src="", alt="")
-                            span.quotesContainerName__name Maja Spahary
-                        .quoutesContainerCite
-                            img.quotesContainerCite__img(src="", alt="")
-                            blockquotes.quotesContainerCite__blockquotes Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit voluptates nisi consequuntur corporis eum.
-                            img.quotesContainerCite__img(src="", alt="")
+                        +quotesContainerContent
                     .quotesContainer.quotesContainer--third
-                        .quotesContainerName
-                            img.quotesContainerName__img(src="", alt="")
-                            span.quotesContainerName__name Maja Spahary
-                        .quoutesContainerCite
-                            img.quotesContainerCite__img(src="", alt="")
-                            blockquotes.quotesContainerCite__blockquotes Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit voluptates nisi consequuntur corporis eum.
-                            img.quotesContainerCite__img(src="", alt="")
+                        +quotesContainerContent   
                     .quotesContainer.quotesContainer--fourth
-                        .quotesContainerName
-                            img.quotesContainerName__img(src="", alt="")
-                            span.quotesContainerName__name Maja Spahary
-                        .quoutesContainerCite
-                            img.quotesContainerCite__img(src="", alt="")
-                            blockquotes.quotesContainerCite__blockquotes Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit voluptates nisi consequuntur corporis eum.
-                            img.quotesContainerCite__img(src="", alt="")
+                        +quotesContainerContent    
                     .quotesContainer.quotesContainer--fifth
-                        .quotesContainerName
-                            img.quotesContainerName__img(src="", alt="")
-                            span.quotesContainerName__name Maja Spahary
-                        .quoutesContainerCite
-                            img.quotesContainerCite__img(src="", alt="")
-                            blockquotes.quotesContainerCite__blockquotes Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit voluptates nisi consequuntur corporis eum.
-                            img.quotesContainerCite__img(src="", alt="")
+                        +quotesContainerContent   
                     .quotesContainer.quotesContainer--sixth
-                        .quotesContainerName
-                            img.quotesContainerName__img(src="", alt="")
-                            span.quotesContainerName__name Maja Spahary
-                        .quoutesContainerCite
-                            img.quotesContainerCite__img(src="", alt="")
-                            blockquotes.quotesContainerCite__blockquotes Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit voluptates nisi consequuntur corporis eum.
-                            img.quotesContainerCite__img(src="", alt="")
+                        +quotesContainerContent   
                 .quotesArrows
                     a.quotesArrows__link.quotesArrows__link--first(href=""): img.quotesArrows__img(src="", alt="")
                     a.quotesArrows__link.quotesArrows__link--second(href=""): img.quotesArrows__img(src="", alt="")          
@@ -107,21 +67,17 @@ html(lang="en")
                     h3.informationSocialMedia__title.subsubtitle Redes Sociales
                     .informationSocialMediaContainer
                         .informationSocialMediaContainerBox.informationSocialMediaContainerBox--instagram
-                            a.informationSocialMediaContainerBoxLink(href="")
-                                img.informationSocialMediaContainerBoxLink__img(src="", alt="")
-                                span.informationSocialMediaContainerBoxLink__span RockyVida
+                            mixin informationSocialMediaContainerBoxContent
+                                a.informationSocialMediaContainerBoxLink(href="")
+                                    img.informationSocialMediaContainerBoxLink__img(src="", alt="")
+                                    span.informationSocialMediaContainerBoxLink__span 
+                            +informationSocialMediaContainerBoxContent
                         .informationSocialMediaContainerBox.informationSocialMediaContainerBox--whatsapp
-                            a.informationSocialMediaContainerBoxLink(href="")
-                                img.informationSocialMediaContainerBoxLink__img(src="", alt="")
-                                span.informationSocialMediaContainerBoxLink__span 123456789
+                            +informationSocialMediaContainerBoxContent
                         .informationSocialMediaContainerBox.informationSocialMediaContainerBox--gmail
-                            a.informationSocialMediaContainerBoxLink(href="")
-                                img.informationSocialMediaContainerBoxLink__img(src="", alt="")
-                                span.informationSocialMediaContainerBoxLink__span Gmail
+                            +informationSocialMediaContainerBoxContent
                         .informationSocialMediaContainerBox.informationSocialMediaContainerBox--facebook
-                            a.informationSocialMediaContainerBoxLink(href="")
-                                img.informationSocialMediaContainerBoxLink__img(src="", alt="")
-                                span.informationSocialMediaContainerBoxLink__span Facebook
+                            +informationSocialMediaContainerBoxContent    
                 section.informationTime
                     h3.informationTime__title.subsubtitle Horarios
                     section.informationTimeDirection
