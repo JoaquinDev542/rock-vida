@@ -12,13 +12,13 @@ html(lang="en")
             h1.main__title.title Maneras de Donar
             .mainContainer
                 .mainContainerBox.mainContainerBox--first
-                    h2.mainContainer__title.subtitle BBVA 
-                    p.mainContainer__p 1234 456789
+                    mixin mainContainerBoxContent
+                        h2.mainContainer__title.subtitle BBVA 
+                        p.mainContainer__p 1234 456789
+                    +mainContainerBoxContent
                 .mainContainerBox.mainContainerBox--second
-                    h2.mainContainer__title.subtitle BIZUM 
-                    p.mainContainer__p +348554581
+                    +mainContainerBoxContent
                 .mainContainerBox.mainContainerBox--third
-                    h2.mainContainer__title.subtitle BBVA 
-                    p.mainContainer__p 1234 456789
+                    +mainContainerBoxContent
         footer.footer
             include footer

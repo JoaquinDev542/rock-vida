@@ -1,27 +1,19 @@
 section.blog
     h1.blog__title.title NUESTRO BLOG 
     .blogContent.blogContent--first
-        a.blog__link(href="") 
-            img.blogContent__img(src=" ", alt="")
-            h4.blogContent__subtitle.subtitle TITULO
-            p.blogContent__paragraph.paragraph Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        mixin blogContentContent
+            a.blog__link(href="") 
+                img.blogContent__img(src=" ", alt="")
+                h4.blogContent__subtitle.subtitle
+                p.blogContent__paragraph.paragraph
+        +blogContentContent
     .blogContent.blogContent--second
-        a.blog__link(href="") 
-            img.blogContent__img(src="", alt="")
-            h4.blogContent__subtitle.subtitle TITULO
-            p.blogContent__paragraph.paragraph Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        +blogContentContent
     .blogContent.blogContent--third
-        a.blog__link(href="") 
-            img.blogContent__img(src="", alt="")
-            h4.blogContent__subtitle.subtitle TITULO
-            p.blogContent__paragraph.paragraph Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        +blogContentContent
     .blogContent.blogContent--fourth
-        a.blog__link(href="") 
-            img.blogContent__img(src="", alt="")
-            h4.blogContent__subtitle.subtitle TITULO
-            p.blogContent__paragraph.paragraph Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        +blogContentContent
     .blogNextPage
         p.blogNextPage__paragraph.paragraph Página 
-            a.blogNextPage__link(href="./page1.html") 1 
-            a.blogNextPage__link(href="./page2.html") 2 
-            a.blogNextPage__link(href="./page3.html") 3  
+            - for ( let x=1; x<4; x++)
+                a.blogNextPage__link(href="./page1.html") #{x}

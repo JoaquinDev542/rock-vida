@@ -1,15 +1,11 @@
 .blogContainer.blogContainer--first
-    a.blogContainerLink(href="#")
-        img.blogContainer__img(src="", alt="")
-        span.blogContainer__day 18/12/2022
-        p.blogContainer__text Argentina campeona del mundo...
+    mixin blogContainerContent
+        a.blogContainerLink(href="#")
+            img.blogContainer__img(src="", alt="")
+            span.blogContainer__day 18/12/2022
+            p.blogContainer__text Argentina campeona del mundo...
+    +blogContainerContent
 .blogContainer.blogContainer--second
-    a.blogContainerLink(href="#")
-        img.blogContainer__img(src="", alt="")
-        span.blogContainer__day 18/12/2022
-        p.blogContainer__text Argentina campeona del mundo...
+    +blogContainerContent
 .blogContainer.blogContainer--third
-    a.blogContainerLink(href="#")
-        img.blogContainer__img(src="", alt="")
-        span.blogContainer__day 18/12/2022
-        p.blogContainer__text Argentina campeona del mundo...
+    +blogContainerContent
