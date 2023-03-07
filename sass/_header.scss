@@ -1,7 +1,9 @@
 @use "variables";
 @use "general";
-
-// .header {
+.header {
+    display: flex;
+    // flex-direction: column;
+    // background-color: red;
 //     &__logo {
 
 //     }
@@ -9,16 +11,24 @@
 //     &__img {
         
 //     }
-// }
+}
 
-// .navContainer {
+.hamburger {
+    &__img {
+        background-color: blue;
+    }
+}
 
-// }
+.menuOpen {
+    display: none;
+}
 
-// .menuOpen {
+.nav {
+    display: none;
+    background-color: green;
+   
+}
 
-// }
-
-// .nav {
-
-// }
+.navContainer__link {
+    display: none;
+}
