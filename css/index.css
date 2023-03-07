@@ -1,23 +1,37 @@
-/* Error: Expected expression.
- *   ,
- * 4 |     color: ;
- *   |            ^
- *   '
- *   sass\_aside.scss 4:12  @use
- *   sass\index.scss 5:1    root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 4 \2502      color: ;\d\a   \2502             ^\a   \2575 \a   sass\\_aside.scss 4:12  @use\a   sass\\index.scss 5:1    root stylesheet";
+:root {
+  /*  Colors    */
+  --color-bg: #F5F5F5;
+  --color-white: #FFFFFF;
+  --color-red: #E20714;
+  --color-title: #1D1D1B;
+  --color-paragraph: #3F3F3F;
+  /*  Font-Family */
+  --ff-title: "Lilita One", cursive;
+  --ff-paragraph: "Nunito", sans-serif;
 }
-<<<<<<< HEAD
-=======
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: var(--ff-paragraph);
+  padding: clamp(0.75rem, 5vw, 2.8125rem);
+}
+
+main {
+  display: block;
+  overflow: hidden;
+}
 
 h1, h2, h3 {
   margin: 0;
@@ -199,5 +213,34 @@ template {
   display: none;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 100px;
+}
+.hamburger__img {
+  background-color: blue;
+  width: 50px;
+}
+
+.menuOpen {
+  display: none;
+}
+
+.nav {
+  display: none;
+  background-color: green;
+}
+
+.navContainer__link {
+  display: none;
+}
+
+.navContainer__DarkMode {
+  display: none;
+}
+
 /*# sourceMappingURL=index.css.map */
->>>>>>> c7e2fd4be5c1b1d7183b75f8e979bc416b46c7c5
