@@ -400,6 +400,25 @@ template {
   padding-left: clamp(0.75rem, 5vw, 2.8125rem);
   padding-right: clamp(0.75rem, 5vw, 2.8125rem);
 }
+@media screen and (min-width: 1024px) {
+  .footerInformation {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    flex-direction: row;
+  }
+}
+.footerInformation__img {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .footerInformationContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+  }
+}
 
 .footerContent {
   position: relative;
@@ -417,19 +436,44 @@ template {
 .footerInformationPlaceAndDays {
   display: none;
 }
+@media screen and (min-width: 1024px) {
+  .footerInformationPlaceAndDays {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.footerInformationPlaceAndDays .footerInformationPlace__span {
+  font-weight: 600;
+}
+@media screen and (min-width: 1024px) {
+  .footerInformationPlaceAndDays .footerInformationPlace {
+    display: flex;
+    align-items: center;
+  }
+}
+.footerInformationPlaceAndDays .footerInformationDays__span {
+  font-weight: 600;
+}
+@media screen and (min-width: 1024px) {
+  .footerInformationPlaceAndDays .footerInformationDays {
+    display: flex;
+    align-items: center;
+  }
+}
 
 .footerInformationSocialMedia {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.9375rem;
+  gap: clamp(15px, 5vw, 50px);
   text-align: center;
 }
 
 .footerInformationSocialMediaContainer__img {
   margin: 0 auto;
-  padding-bottom: 0.3125rem;
-  width: 2.1875rem;
+  padding-bottom: clamp(5px, 10vw, 10px);
+  width: clamp(35px, 10vw, 40px);
 }
 
 .footerContent {
