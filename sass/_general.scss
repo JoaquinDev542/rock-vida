@@ -11,26 +11,10 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	// max-width: 1500px;
-    // margin: 0 auto;
     font-size: 16px;
 	font-family: var(--ff-paragraph);
-	// padding-left: clamp(0.75rem , 5vw , 2.8125rem);
-	// padding-right: clamp(0.75rem , 5vw , 2.8125rem);
 	background-color: var(--color-bg);
 }
-
-// ::selection {
-
-// }
-
-// main {
-    // display: grid;
-	// flex-direction: column;
-	// padding-top: 300px;
-	// gap: clamp(9.375rem , 10vw ,  12.5rem);
-    // overflow: hidden;
-// }
 
 h1, h2, h3 {
     margin: 0;

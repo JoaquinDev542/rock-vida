@@ -63,7 +63,7 @@
     }
     .footerInformationPlace {
         &__span {
-            font-weight: 600;
+            font-weight: 800;
         }
         @media screen and (min-width:1024px){
             display: flex;
@@ -73,7 +73,7 @@
     
     .footerInformationDays {
         &__span {
-            font-weight: 600;
+            font-weight: 800;
         }
         @media screen and (min-width:1024px){
             display: flex;
@@ -99,6 +99,10 @@
 .footerContent {
     text-align: center;
     padding: 25px 0;
+}
+
+.footerContentCopyrightLink {
+    font-weight: 800;
 }
 
 .footerContentNav {

@@ -6,10 +6,6 @@
 @use "footer";
 
 .about {
-    // max-width: 1400px;
-    // margin: 0 auto;
-    // margin-left: clamp(0.75rem , 5vw , 2.8125rem);
-	// margin-right: clamp(0.75rem , 5vw , 2.8125rem);
     &__title {
         margin-left: clamp(0.75rem , 5vw , 2.8125rem);
 	    margin-right: clamp(0.75rem , 5vw , 2.8125rem);
@@ -43,26 +39,9 @@
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    // &__title {
-
-    // }
-
-    // &__img {
-
-    // }
 }
 
-// .aboutContainerLink {
-    // &__span {
-    //     display: inline-block;
-    // }
-
-//     &__img {
-
-//     }
-// }
-
-.hero , .about , .quotes , .information , .contact , .footer{
+.hero , .about , .quotes , .information , .contact{
 //     display: none;
     max-width: 1500px;
     margin: 0 auto;

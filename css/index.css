@@ -281,7 +281,7 @@ template {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 @media screen and (min-width: 1024px) {
@@ -444,7 +444,7 @@ template {
   }
 }
 .footerInformationPlaceAndDays .footerInformationPlace__span {
-  font-weight: 600;
+  font-weight: 800;
 }
 @media screen and (min-width: 1024px) {
   .footerInformationPlaceAndDays .footerInformationPlace {
@@ -453,7 +453,7 @@ template {
   }
 }
 .footerInformationPlaceAndDays .footerInformationDays__span {
-  font-weight: 600;
+  font-weight: 800;
 }
 @media screen and (min-width: 1024px) {
   .footerInformationPlaceAndDays .footerInformationDays {
@@ -479,6 +479,10 @@ template {
 .footerContent {
   text-align: center;
   padding: 25px 0;
+}
+
+.footerContentCopyrightLink {
+  font-weight: 800;
 }
 
 .footerContentNav {
@@ -520,7 +524,7 @@ template {
   gap: 0.5rem;
 }
 
-.hero, .about, .quotes, .information, .contact, .footer {
+.hero, .about, .quotes, .information, .contact {
   max-width: 1500px;
   margin: 0 auto;
 }
