@@ -1,0 +1,29 @@
+.blogContainers {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: clamp(0.75rem, 5vw, 2.8125rem);
+  padding-right: clamp(0.75rem, 5vw, 2.8125rem);
+}
+@media screen and (min-width: 768px) {
+  .blogContainers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blogContainers {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.blogContainerLink {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.blogContainerLink__day {
+  font-weight: 600;
+}
