@@ -5,14 +5,13 @@
 @use "aside";
 @use "footer";
 
-.main {
-    margin-top: 100px;
-}
+// .main {
+//     margin-top: 100px;
+//     margin-bottom: 100px;
+// }
 
-.hero , .about , .quotes , .information , .contact , .aside{
-    display: none;
-}
-
-.footer {
-    display: none;
+.hero , .about , .quotes , .information , .contact , .footer{
+//     display: none;
+    max-width: 1500px;
+    margin: 0 auto;
 }
