@@ -1,3 +1,15 @@
+:root {
+  /*  Colors    */
+  --color-bg: #F5F5F5;
+  --color-white: #FFFFFF;
+  --color-red: #E20714;
+  --color-title: #1D1D1B;
+  --color-paragraph: #3F3F3F;
+  /*  Font-Family */
+  --ff-title: "Lilita One", cursive;
+  --ff-paragraph: "Nunito", sans-serif;
+}
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -11,6 +23,7 @@ html {
 body {
   margin: 0 auto;
   font-size: 16px;
+  font-family: var(--ff-paragraph);
 }
 
 main {
@@ -21,6 +34,10 @@ main {
 h1, h2, h3 {
   margin: 0;
   line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--ff-title);
 }
 
 h2 {
@@ -192,22 +209,6 @@ template {
 
 [hidden] {
   display: none;
-}
-
-a {
-  color: red;
-}
-
-a {
-  color: red;
-}
-
-a {
-  color: red;
-}
-
-a {
-  color: red;
 }
 
 /*# sourceMappingURL=index.css.map */
