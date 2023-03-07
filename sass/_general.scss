@@ -42,12 +42,17 @@ h1, h2, h3 , h4 ,h5{
 }
 
 h2 {
-    font-size: clamp(2.1875rem , 5vw , 6rem);
+    font-size: clamp(2.1875rem , 4.25vw , 5.5rem);
 }
 
 h3 {
-    font-size: clamp(2rem , 3vw , 4.5rem);
+    font-size: clamp(2rem , 2.25vw , 4rem);
 }
+
+h4 {
+    font-size: clamp(1.5rem , 1.5vw , 2.75rem);
+}
+
 
 img {
     display: block;
@@ -58,6 +63,7 @@ img {
 p {
     line-height: 1.5;
     margin: 0;
+	font-size: clamp(1rem, 1.15vw, 1.25rem);
 }
 
 a {
@@ -68,6 +74,11 @@ a {
 
 span {
     display: block;
+	font-size: clamp(1rem, 1.15vw, 1.25rem);
+}
+
+blockquotes {
+	font-size: clamp(1rem, 1.15vw, 1.25rem);
 }
 
 hr {

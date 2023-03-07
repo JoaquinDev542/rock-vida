@@ -5,9 +5,61 @@
 @use "aside";
 @use "footer";
 
-// .main {
-//     margin-top: 100px;
-//     margin-bottom: 100px;
+.about {
+    // max-width: 1400px;
+    // margin: 0 auto;
+    // margin-left: clamp(0.75rem , 5vw , 2.8125rem);
+	// margin-right: clamp(0.75rem , 5vw , 2.8125rem);
+    &__title {
+        margin-left: clamp(0.75rem , 5vw , 2.8125rem);
+	    margin-right: clamp(0.75rem , 5vw , 2.8125rem);
+    }
+
+    &__paragraph {
+        margin-left: clamp(0.75rem , 5vw , 2.8125rem);
+	    margin-right: clamp(0.75rem , 5vw , 2.8125rem);
+    }
+}
+
+.aboutContainers {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-left: clamp(0.75rem , 5vw , 2.8125rem);
+	padding-right: clamp(0.75rem , 5vw , 2.8125rem);
+
+    @media screen and (min-width:768px){
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+    }
+
+    @media screen and (min-width:1024px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    // &__title {
+
+    // }
+
+    // &__img {
+
+    // }
+}
+
+// .aboutContainerLink {
+    // &__span {
+    //     display: inline-block;
+    // }
+
+//     &__img {
+
+//     }
 // }
 
 .hero , .about , .quotes , .information , .contact , .footer{
