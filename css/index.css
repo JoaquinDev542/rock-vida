@@ -305,6 +305,7 @@ template {
   .navContainerRight__DarkMode {
     display: block;
     width: 30px;
+    cursor: pointer;
   }
 }
 
