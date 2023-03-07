@@ -6,6 +6,10 @@
 @use "footer";
 
 .main {
+    margin-top: 100px;
+}
+
+.hero , .about , .quotes , .information , .contact , .aside{
     display: none;
 }
 
