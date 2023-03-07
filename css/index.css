@@ -25,7 +25,9 @@ body {
   margin: 0 auto;
   font-size: 16px;
   font-family: var(--ff-paragraph);
-  padding: clamp(0.75rem, 5vw, 2.8125rem);
+  padding-left: clamp(0.75rem, 5vw, 2.8125rem);
+  padding-right: clamp(0.75rem, 5vw, 2.8125rem);
+  background-color: var(--color-bg);
 }
 
 main {
@@ -217,6 +219,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: red;
 }
 .header__logo {
   width: 100px;
