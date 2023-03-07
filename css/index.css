@@ -24,6 +24,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   font-size: 16px;
   font-family: var(--ff-paragraph);
   background-color: var(--color-bg);
@@ -217,6 +218,10 @@ template {
 
 [hidden] {
   display: none;
+}
+
+.hero, .about, .quotes, .information, .contact, .blogContainers, .aside {
+  padding-bottom: 150px;
 }
 
 .header {
@@ -524,7 +529,58 @@ template {
   gap: 0.5rem;
 }
 
-.hero, .about, .quotes, .information, .contact {
+.contact {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: clamp(0.75rem, 5vw, 2.8125rem);
+  padding-right: clamp(0.75rem, 5vw, 2.8125rem);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "input--name input--email" "textarea textarea" "form__send form__send";
+  }
+}
+.form__send {
+  align-self: flex-end;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-title);
+  color: var(--color-white);
+  grid-area: "form__send";
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+}
+.input--name {
+  grid-area: "input--name";
+}
+.input--email {
+  grid-area: "input--email";
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0.75rem;
+  min-height: 9rem;
+  max-height: 12rem;
+  resize: vertical;
+  grid-area: "textarea";
+}
+
+.hero, .about, .quotes, .information {
   max-width: 1500px;
   margin: 0 auto;
 }

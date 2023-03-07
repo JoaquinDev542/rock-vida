@@ -11,6 +11,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+	min-height: 100vh;
     font-size: 16px;
 	font-family: var(--ff-paragraph);
 	background-color: var(--color-bg);
@@ -181,4 +182,8 @@ template {
 }
 [hidden] {
 	display: none;
+}
+
+.hero , .about , .quotes , .information , .contact , .blogContainers , .aside {
+	padding-bottom: 150px;
 }
