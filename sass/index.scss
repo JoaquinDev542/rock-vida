@@ -4,3 +4,11 @@
 @use "blog";
 @use "aside";
 @use "footer";
+
+.main {
+    display: none;
+}
+
+.footer {
+    display: none;
+}
