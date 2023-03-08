@@ -23,12 +23,24 @@
         display: grid;
         grid-template-columns: .5fr .5fr;
         flex-direction: row;
+        padding-top: clamp(1rem , 5vw , 5rem);
+        padding-bottom: clamp(1rem , 5vw , 5rem);
     }
 
     &__img {
         width: 80%;
+        max-width: 500px;
         margin: 0 auto;
     }
+}
+
+.footerInformationContent {
+    display: grid;
+    gap: 2rem;
+
+    // @media screen and (min-width:1440px){
+        // gap: 0;
+    // } 
 }
 
 .footerContent {
@@ -52,13 +64,17 @@
         padding-left: clamp(0.75rem, 5vw, 2.8125rem);
         padding-right: clamp(0.75rem, 5vw, 2.8125rem);
     }
-    &Copyright{
-        @media screen and (min-width:1024px){
-            text-align: left;
-        } 
-    }
+   
 }
 
+.footerContentCopyright{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @media screen and (min-width:1024px){
+        text-align: left;
+    } 
+}
 
 .footerInformationPlaceAndDays {
     display: none;
@@ -68,6 +84,8 @@
         gap: 15px;
     }
     .footerInformationPlace {
+        display: flex;
+        gap: 1rem;
         &__span {
             font-weight: 800;
         }
@@ -78,6 +96,8 @@
     }
     
     .footerInformationDays {
+        display: flex;
+        gap: 1rem;
         &__span {
             font-weight: 800;
         }
@@ -94,6 +114,10 @@
     justify-content: center;
     gap: clamp(15px , 5vw , 50px);
     text-align: center;
+
+    @media screen and (min-width:1024px){
+        justify-content: initial;
+    }
 }
 
 .footerInformationSocialMediaContainer__img {
@@ -111,13 +135,14 @@
     @media screen and (min-width:1024px){
         display: block;
     }
-    &List {
-        margin: 0;
-        display: flex;
-        gap: 15px;
-        list-style: none;
-        font-weight: 800;
-        text-transform: uppercase;
-        font-size: 13px;
-    }
+}
+
+.footerContentNavList {
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 13px;
 }
