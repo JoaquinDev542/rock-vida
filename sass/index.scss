@@ -5,6 +5,67 @@
 @use "aside";
 @use "footer";
 
+.hero {
+    // position: relative;
+    // height: calc(100vh - 69.39px);
+    // // height: 100vh;
+    // background-color: var(--color-white);
+}
+
+.heroTextMove {
+    // display: none;
+}
+
+.heroContent {
+    // position: absolute;
+    // width: 100%;
+    // height: auto;
+    // top: 50%;
+    // left:0 ;
+    // right:0;
+    // padding-left:clamp(0.75rem , 5vw , 2.8125rem) ;
+    // padding-right: clamp(0.75rem , 5vw , 2.8125rem) ;
+    // transform: translateY(-50%);
+
+//     &__span {
+//         color: var(--color-red);
+//         font-size: clamp(1.25rem , 1.75vw , 2.5rem);
+//         font-weight: 800;
+//     }
+// }
+
+.heroContentTitle {
+    // &__img {
+    //     width: max-content;
+    //     margin: 0 auto;
+    // }
+}
+
+.heroContentImg {
+    // &__img {
+    //     position: relative;
+    //     width: 100%;
+    //     max-width: 900px;
+    //     max-height: 400px;
+    //     margin: 0 auto;
+    //     object-fit: cover;
+    // }
+
+    // &__link {
+    //     position: absolute;
+    //     bottom: -1.1997rem;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     color: var(--color-white);
+    //     background-color: var(--color-title);
+    //     width: max-content;
+    //     padding: 10px 20px;
+    //     border-radius: 10px;
+    //     margin: 0 auto;
+    //     font-weight: 600;
+    // }
+}
+
 .about {
     max-width: 1400px;
     margin: 0 auto;
