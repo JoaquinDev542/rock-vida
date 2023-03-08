@@ -547,8 +547,93 @@ template {
   gap: 0.5rem;
 }
 
+.quotes {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: clamp(0.75rem, 5vw, 2.8125rem);
+  padding-right: clamp(0.75rem, 5vw, 2.8125rem);
+}
+.quotes__title {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .quotesContainers {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.quotesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--color-title);
+  color: var(--color-white);
+  border-radius: 10px;
+}
+.quotesContainer--second {
+  display: none;
+}
+.quotesContainer--third {
+  display: none;
+}
+.quotesContainer--fourth {
+  display: none;
+}
+.quotesContainer--fifth {
+  display: none;
+}
+.quotesContainer--sixth {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .quotesContainer--second {
+    display: block;
+  }
+}
+
+.quotesContainerName {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.quotesContainerName__img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.quotesContainerName__name {
+  font-weight: 800;
+}
+
+.quotesContainerCite {
+  position: relative;
+}
+.quotesContainerCite__blockquotes {
+  line-height: 1.5;
+}
+.quotesContainerCite__img--position {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.quotesArrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.quotesArrows__img {
+  width: 50px;
+}
+
 .information {
-  max-width: 1500px;
+  max-width: 1400px;
   margin: 0 auto;
   padding-left: clamp(0.75rem, 5vw, 2.8125rem);
   padding-right: clamp(0.75rem, 5vw, 2.8125rem);
@@ -603,7 +688,7 @@ template {
 }
 
 .contact {
-  max-width: 1500px;
+  max-width: 1400px;
   margin: 0 auto;
   padding-left: clamp(0.75rem, 5vw, 2.8125rem);
   padding-right: clamp(0.75rem, 5vw, 2.8125rem);
@@ -661,8 +746,8 @@ template {
   grid-area: "textarea";
 }
 
-.hero, .about, .quotes {
-  max-width: 1500px;
+.hero {
+  max-width: 1400px;
   margin: 0 auto;
 }
 
