@@ -540,6 +540,10 @@ template {
   font-size: 13px;
 }
 
+.about {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 .about__title {
   margin-left: clamp(0.75rem, 5vw, 2.8125rem);
   margin-right: clamp(0.75rem, 5vw, 2.8125rem);
@@ -583,14 +587,6 @@ template {
 }
 .quotes__title {
   margin-bottom: 2rem;
-}
-@media screen and (min-width: 1024px) {
-  .quotes {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: none;
-    margin: initial;
-  }
 }
 
 @media screen and (min-width: 768px) {
