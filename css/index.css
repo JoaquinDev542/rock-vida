@@ -30,7 +30,7 @@ body {
   background-color: var(--color-bg);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   margin: 0;
   line-height: 1.5;
 }
@@ -547,6 +547,61 @@ template {
   gap: 0.5rem;
 }
 
+.information {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: clamp(0.75rem, 5vw, 2.8125rem);
+  padding-right: clamp(0.75rem, 5vw, 2.8125rem);
+}
+.information__title {
+  margin-bottom: 2rem;
+}
+
+.informationContainerGrid {
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .informationContainerGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.informationSocialMediaContainer {
+  margin-top: 1.5rem;
+}
+
+.informationSocialMediaContainerBoxLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: max-content;
+}
+.informationSocialMediaContainerBoxLink__img {
+  width: clamp(2.1875rem, 10vw, 2.5rem);
+  height: clamp(2.1875rem, 10vw, 2.5rem);
+}
+
+.informationTimeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.informationTimeDirection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.informationTimeWhen {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .contact {
   max-width: 1500px;
   margin: 0 auto;
@@ -563,8 +618,8 @@ template {
 @media screen and (min-width: 1024px) {
   .form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 46.39px 144px 50px;
     grid-template-areas: "input--name input--email" "textarea textarea" "form__send form__send";
   }
 }
@@ -573,7 +628,11 @@ template {
   padding: 0.75rem 1.5rem;
   background-color: var(--color-title);
   color: var(--color-white);
-  grid-area: "form__send";
+}
+@media screen and (min-width: 1024px) {
+  .form__send {
+    grid-area: "form__send";
+  }
 }
 
 .input {
@@ -581,11 +640,15 @@ template {
   width: 100%;
   padding: 0.75rem;
 }
-.input--name {
-  grid-area: "input--name";
+@media screen and (min-width: 1024px) {
+  .input--name {
+    grid-area: "input--name";
+  }
 }
-.input--email {
-  grid-area: "input--email";
+@media screen and (min-width: 1024px) {
+  .input--email {
+    grid-area: "input--email";
+  }
 }
 
 .textarea {
@@ -598,7 +661,7 @@ template {
   grid-area: "textarea";
 }
 
-.hero, .about, .quotes, .information {
+.hero, .about, .quotes {
   max-width: 1500px;
   margin: 0 auto;
 }
