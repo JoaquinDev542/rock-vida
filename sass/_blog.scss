@@ -1,11 +1,18 @@
-.blogContainers {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.blog {
     max-width: 1400px;
     margin: 0 auto;
     padding-left: clamp(0.75rem , 5vw , 2.8125rem);
 	padding-right: clamp(0.75rem , 5vw , 2.8125rem);
+
+    &__title {
+        padding-bottom: 2rem;
+    }
+}
+
+.blogContainers {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
     @media screen and (min-width:768px){
         display: grid;
