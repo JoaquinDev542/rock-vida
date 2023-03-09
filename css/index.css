@@ -313,8 +313,8 @@ template {
   width: 100%;
   padding-left: clamp(0.75rem, 5vw, 2.8125rem);
   display: block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .menuOpenDarkMode {
@@ -325,7 +325,7 @@ template {
   color: var(--color-white);
   padding-left: clamp(0.75rem, 5vw, 2.8125rem);
   padding-right: clamp(0.75rem, 5vw, 2.8125rem);
-  height: 34.39px;
+  height: 50.4px;
 }
 .menuOpenDarkMode__span {
   font-family: var(--ff-title);
