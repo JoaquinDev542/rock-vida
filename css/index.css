@@ -41,15 +41,15 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-  font-size: clamp(32px, 4.25vw, 88px);
+  font-size: clamp(2rem, 4.25vw, 4.375rem);
 }
 
 h3 {
-  font-size: clamp(24px, 2.25vw, 64px);
+  font-size: clamp(1.5rem, 2.25vw, 2.1875rem);
 }
 
 h4 {
-  font-size: clamp(17px, 1.5vw, 44px);
+  font-size: clamp(1.0625rem, 1.5vw, 1.4375rem);
 }
 
 img {
@@ -61,7 +61,7 @@ img {
 p {
   line-height: 1.5;
   margin: 0;
-  font-size: clamp(15px, 1.15vw, 1.25rem);
+  font-size: clamp(0.9375rem, 1.15vw, 1.25rem);
 }
 
 a {
