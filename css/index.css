@@ -270,7 +270,7 @@ template {
 
 .menuOpen {
   position: absolute;
-  transform: translateY(-130%);
+  transform: translateY(-150%);
 }
 
 .menuOpen.active {
