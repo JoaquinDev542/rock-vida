@@ -185,9 +185,16 @@ template {
 	display: none;
 }
 
-.about , .quotes , .information , .contact , .blog , .aside {
-	padding-bottom: 150px;
+.about , .quotes , .information , .contact , .aside {
+	padding: 75px 0;
 	@media screen and (min-width:1024px){
-		padding-bottom: 200px;
+		padding: 100px 0;
     }
+}
+
+.blog {
+	padding-top: 75px;
+	@media screen and (min-width:1024px){
+		padding-top: 100px;
+	}
 }
